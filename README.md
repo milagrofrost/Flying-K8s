@@ -2,6 +2,8 @@
 
 ![It's here!](image.png)
 
+Promo : https://flyingk8s.milagrofrost.com/flyingk8s.mp3
+
 Flying K8s is a Kubernetes setup that collects metrics for pods and nodes in a cluster and uploads them to Cloudflare R2 using the S3 API. The setup consists of two containers: a metrics collector and an AWS uploader. The metrics collector uses `kubectl` to gather metrics for pods and nodes, then writes them to a JSON file every minute. The AWS uploader uses `aws-cli` to upload the JSON file to Cloudflare R2 using the S3 API every minute.
 
 After that, you can then use the metrics to create visualizations using Flying Toasters! https://github.com/milagrofrost/Flight-of-the-Toasters.  Just make sure to update the remoteDataUrl in the default.json file to point to the correct location of the JSON file (in the Flight of the Toasters deployment). 
