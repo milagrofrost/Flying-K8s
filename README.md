@@ -16,6 +16,9 @@ After that, you can then use the metrics to create visualizations using Flying T
 - https://flyingk8s.milagrofrost.com/?configFile=k8s-demo
   - Showing off the sad toasts and toasters. 
 
+- Toast levels from non-toasted to burnt indicate CPU usage.  Same for toaster levels.
+- Toast and Toaster size indicate memory usage.  The larger the toast or toaster, the more memory is being used.
+
 ## Deployment
 
 This guide explains how to deploy the FlyingK8s setup in the `flying-k8s` namespace. The deployment consists of two containers:
